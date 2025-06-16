@@ -1,7 +1,7 @@
 # Automation: Internet-Speedtest
 Script for testing internet speed automatically
 
-# 1. Speedtest CLI 설치
+## 1. Speedtest CLI 설치
 
 ### 공식 다운로드
 
@@ -20,7 +20,7 @@ cd C:\SpeedtestCLI
 .\speedtest.exe --version
 ```
 
-# 2. 인터넷 속도 측정
+## 2. 인터넷 속도 측정
 
 아직 자동화는 하지 않고, 직접 한 번 실행
 
@@ -42,7 +42,7 @@ cd C:\SpeedtestCLI
 {"type":"result","timestamp":"2025-06-16T16:14:42Z","ping":{"jitter":3.592,"latency":5.581,"low":3.328,"high":10.580},"download":{"bandwidth":65047341,"bytes":624157784,"elapsed":15008,"latency":{"iqm":40.610,"low":5.286,"high":60.373,"jitter":11.604}},"upload":{"bandwidth":65693153,"bytes":691259582,"elapsed":11325,"latency":{"iqm":26.971,"low":3.811,"high":262.895,"jitter":17.044}},"packetLoss":0,"isp":"Cox Business","interface":{"internalIp":"10.1.0.123","name":"","macAddr":"18:93:41:7D:EF:6F","isVpn":false,"externalIp":"70.168.153.114"},"server":{"id":16620,"host":"speedtest.rd.oc.cox.net","port":8080,"name":"Cox - Orange County","location":"Orange County, CA","country":"United States","ip":"184.182.243.145"},"result":{"id":"780b15e4-e9a9-49a2-b967-d98038e85418","url":"https://www.speedtest.net/result/c/780b15e4-e9a9-49a2-b967-d98038e85418","persisted":true}}
 ```
 
-# 3. CSV 파일로 저장 (PowerShell)
+## 3. CSV 파일로 저장 (PowerShell)
 
 ### 로그 디렉토리 생성 (`C:\SpeedtestCLI\Logs`)
 
@@ -105,7 +105,7 @@ Set WshShell = CreateObject("WScript.Shell")
 WshShell.Run "powershell.exe -ExecutionPolicy Bypass -File ""C:\SpeedtestCLI\speedtest_logger.ps1""", 0, False
 ```
 
-# 4. 작업 스케줄러 설정
+## 4. 작업 스케줄러 설정
 
 ### Search > Task scheduler
 
